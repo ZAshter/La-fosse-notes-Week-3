@@ -15,8 +15,8 @@ then...
 
 DONT CONFUSE END POINTS WITH THESE parameters:
 
-1) REQUEST PARAMETER URL/ID (id is not an endpoint it is a request parameter)
-2) request query URL?type=walue (type=value is a request query)
+1) REQUEST PARAMETER URL/:ID (id is not an endpoint it is a request parameter)
+2) request query URL?type=value (type=value is a request query)
 
 #Query parameters
 e.g type=music
@@ -66,3 +66,78 @@ app.listen(port, () => {
 
  
 <img width="1606" height="546" alt="image" src="https://github.com/user-attachments/assets/aecae15c-0e59-42ab-903b-f13172d9636c" />
+
+
+#Architechure patterns 
+
+**sofware design patterns (why seperate files rather than work on one document?)**
+1) scaling (as the project gets bigger its easier to know where to narrow a bug to etc)
+2) Teamwork (avoids merge conflicts)
+3) Testing/debugging
+
+**How do we achieve this then?**
+Separation of concern
+i.e 3 files:
+-index.html
+-script.js
+-styles.css
+
+component based architechure
+-doing separation of concern but for components
+e.g. a button component
+
+#**MVC architechure1**
+
+breaks down an entire application intro three parts:
+1) view- I as a user clicks on a button on a page
+2) controller- what button do i need to request (may speak to model- kind of like a middle man)
+3) Model- interacts with database.
+
+   <img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/e9930e97-f985-4bda-912e-14683859d7c5" />
+
+#Microservices vs Monolithic
+A monolithic architecture builds an entire application as a single, unified unit with one centralized codebase and database, whereas a microservices architecture breaks an application into a collection of small, independent, loosely coupled services that communicate via APIs.
+
+<img width="989" height="538" alt="image" src="https://github.com/user-attachments/assets/b4f5fd54-9a75-42c0-a215-129945a99c56" />
+
+#HTTP Methods
+- GET- Retrieves data from specified recourse
+- POST- submit data to be processed to a specified resource
+- PUT - update a specified resource 
+- PATCH- update partial resource
+- DELETE - delete a specified resource
+
+ACRONYM: standard and used for lots of things
+c post
+r get
+u patch 
+d delete
+
+#Building a CRUD application (crud rest API)
+
+currently we have building: client request --> app --> get --> response
+now we will make: client request --> app --> controller --> model 
+<img width="1536" height="2048" alt="image" src="https://github.com/user-attachments/assets/73db99fc-d844-4260-bff2-19e63b0df0fe" />
+
+The model is for handling data/representing data and talks to the controller.
+The controller is responsible for handling the request and responsw
+
+#class
+-Classes are a template for creating objects. They encapsulate data with code to work on that data.
+class Animal {
+  constructor(name, age, species, hobby) {
+  this.name = name
+  this.age = age
+  this,species = species
+  this.hobby= hobby;
+  }
+  welcome() {
+   return `My name is ${this.name}. I am ${this.age}. I am a ${this.species} and I love ${this.hobby}`
+}
+}
+
+
+#when something is declared as static it belongs to the class itself and not the objects.
+class  needs to be singular and have a capital letter at the start of its name e.g Fruit not Fruits
+   
+
