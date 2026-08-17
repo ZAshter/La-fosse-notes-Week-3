@@ -25,4 +25,16 @@ can combine parameters using '&'.For example: type=music&participants=1
 can filter the activity using the key number given e.g
  https://bored-api.appbrewery.com/activity/3943506  
 
+# **What is the idea behind rest?**
+https://en.wikipedia.org/wiki/REST
+
+The formal REST constraints are as follows:
+- Client/Server – Clients are separated from servers by a well-defined interface
+- Stateless – A specific client does not consume server storage when the client is "at rest"
+- Cache – Responses indicate their own cacheability
+- Uniform interface
+- Layered system – A client cannot ordinarily tell whether it is connected directly to the end server, or to an intermediary along the way
+- Code on demand (optional) – Servers are able to temporarily extend or customize the functionality of a client by transferring logic to the client that can be executed within a standard virtual machine (the server can send code that the client can execute)
+
+- 
  
