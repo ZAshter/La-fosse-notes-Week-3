@@ -36,5 +36,14 @@ The formal REST constraints are as follows:
 - Layered system – A client cannot ordinarily tell whether it is connected directly to the end server, or to an intermediary along the way
 - Code on demand (optional) – Servers are able to temporarily extend or customize the functionality of a client by transferring logic to the client that can be executed within a standard virtual machine (the server can send code that the client can execute)
 
-- 
+- we installed devn dependency called demon which allows to run in the background (npm i -D nodemon)
+- scripts needed are "dev": "nodemon index.js"
+    "start": "node injex.js"
+- then npm run dev
+
+- We then installed dependency express by npm i express
+  <img width="1536" height="2048" alt="WhatsApp Image 2026-08-17 at 11 05 11" src="https://github.com/user-attachments/assets/3dd09557-ca83-4b95-bf2e-f49969bc26a6" />
+
+  We want to create the program
+
  
