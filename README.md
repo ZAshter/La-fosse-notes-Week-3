@@ -6,11 +6,11 @@ anything that talks to a netform is making a request and asking for it back.
 using: https://bored-api.appbrewery.com/
 then...
 #Thunderclient in VS code
-https://**bored-api.appbrewery.com**/random  
-**base url** essentially this doesnt change
-the word after the / is called an endpoint
-Resource= a way of grouping together similar endpoints e.g:
-bbc.com/sports/football     //sports is the resource here, bbc is the base and football is the endpoint
+- https://**bored-api.appbrewery.com**/random  
+- **base url** essentially this doesnt change
+- the word after the / is called an endpoint
+- Resource= a way of grouping together similar endpoints e.g:
+- bbc.com/sports/football     //sports is the resource here, bbc is the base and football is the endpoint
 
 DONT CONFUSE END POINTS WITH THESE parameters:
 
@@ -19,7 +19,7 @@ DONT CONFUSE END POINTS WITH THESE parameters:
 
 #Query parameters
 e.g type=music
-can combined parameters using '&'.For example: type=music&participants=1
+can combine parameters using '&'.For example: type=music&participants=1
 
 can filter the activity using the key number given e.g
  https://bored-api.appbrewery.com/activity/3943506  
