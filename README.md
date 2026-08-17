@@ -65,4 +65,4 @@ app.listen(port, () => {
 //gets the app up and running
 
  
-https://mdn.github.io/shared-assets/images/diagrams/http/messages/http-message-anatomy.svg
+<img width="1606" height="546" alt="image" src="https://github.com/user-attachments/assets/aecae15c-0e59-42ab-903b-f13172d9636c" />
