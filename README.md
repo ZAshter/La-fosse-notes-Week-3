@@ -45,5 +45,24 @@ The formal REST constraints are as follows:
   <img width="1536" height="2048" alt="WhatsApp Image 2026-08-17 at 11 05 11" src="https://github.com/user-attachments/assets/3dd09557-ca83-4b95-bf2e-f49969bc26a6" />
 
   We want to create the program
+- if we want to use json we need to use {} and "".
+
+- request parameter is usually only one value
+
+  #what we have entered in our js file so far:
+- const express = require('express')
+const app = express()
+const port = 3000
+
+app.get('/', (req, res) => {
+    res.status(420).end()
+})
+//means if someone makes a get request from '/' I  am going to look at the request made by the client and generate a response
+
+app.listen(port, () => {
+    console.log(`Example app running on port ${port}`)
+})
+//gets the app up and running
 
  
+https://mdn.github.io/shared-assets/images/diagrams/http/messages/http-message-anatomy.svg
